@@ -102,7 +102,7 @@
         <!-- insert images with srcsets and sizes -->
         
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img srcset="firefox_logo-only_RGB400.png 400w, firefox_logo-only_RGB120.png 130w" sizes="(max-width: 480px) 120px, 400px" src="firefox_logo-only_RGB400.png" alt="Firefox Logo">  
+          <img srcset="firefox_logo-only_RGB400.png 400w, firefox_logo-only_RGB120.png 100w" sizes="(max-width: 480px) 120px, 400px" src="firefox_logo-only_RGB400.png" alt="Firefox Logo">  
         </a>
 
         <a href="https://www.mozilla.org/">
@@ -110,7 +110,7 @@
         </a>
 
         <a href="https://addons.mozilla.org/">
-          <img srcset="firefox-addons.jpg 800w, firefox-addons120.jpg 130w" sizes="(max-width: 480px) 120px, 400px" src="firefox-addons.jpg" alt="Firefox Logo Puzzle">  
+          <img srcset="firefox-addons.jpg 400w, firefox-addons120.jpg 130w" sizes="(max-width: 480px) 120px, 400px" src="firefox-addons.jpg" alt="Firefox Logo Puzzle">  
         </a>
 
         <a href="https://developer.mozilla.org/en-US/">
@@ -122,6 +122,12 @@
 
       <div class="red-panda">
         <!-- insert picture element -->
+
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-panda600.jpg" type="image/jpg">
+          <source media="(max-width: 601px)" srcset="red-panda1200.jpg" type="image/jpg">
+          <img src="red-panda1200.jpg" alt="Stupid furry Animal">  
+        </picture>
       </div>
 
     </main>
